@@ -1,0 +1,92 @@
+article .ngang-tren{
+    background-color: rgb(79, 79, 209);
+    color: #fff;
+    width: 100%;
+    margin-top: 5px;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    border-radius: 3px;
+}
+article .ngang-tren a{
+    display: inline-block;
+    font-weight: bolder;
+    font-size: small;
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+    line-height: 45px;
+    font-family: sans-serif;
+}
+article .ngang-tren a:hover{
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.471);
+    color: black;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+/* article .khung-anh a img{
+    width: 70%;
+    height: 260px;
+    border: 2px double dodgerblue;
+    box-shadow: 0 0 4px darkgray;
+    margin: 5px auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+article .khung-anh {
+    width: 100%;
+    height: 260px;
+    margin: 10px auto; /* Căn giữa theo chiều ngang */
+    background-size: cover; /* Để ảnh bao phủ toàn bộ khung */
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article .khung-anh a {
+    display: flex; /* Sử dụng flexbox để căn giữa ảnh bên trong */
+    justify-content: center;
+    align-items: center;
+    width: 70%; /* Đảm bảo thẻ <a> có cùng độ rộng với ảnh */
+    height: 260px;
+}
+
+article .khung-anh a img {
+    width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng của thẻ <a> */
+    height: auto; /* Giữ tỷ lệ gốc của ảnh */
+    border: 2px double dodgerblue;
+    box-shadow: 0 0 4px darkgray;
+    margin: 5px 0; /* Căn giữa ảnh theo chiều dọc trong thẻ <a> */
+}
+
+.text-gioithieu{
+    font-family: sans-serif;
+    margin: 15px;
+}
+.text-gioithieu h2{
+    margin-top: 30px;
+    text-align: center;
+    font-size: larger;
+}
+.text-gioithieu a{
+    text-decoration: none;
+    color: #0099FF;
+}
+.text-gioithieu a:hover{
+    color: orangered;
+    text-decoration: underline;
+   transition: 0.2s;
+}
+
+
+

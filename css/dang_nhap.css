@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../image/img_dangnhap/pexels-pixabay-33545.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+}
+.ten {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+.form{
+    width: 500px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 40px 50px;
+    /* margin-top: 10px; */
+}
+.form h1{
+    font-size: 36px;
+    text-align: center;
+}
+.form .nhap{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 50px 0;
+}
+.nhap input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    /* border: none; */
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 23px 50px 20px 20px;
+}
+.nhap input::placeholder{
+    color: #fff;
+}
+.nhap i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.form .nho-quen{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+.nho-quen label input{
+    accent-color: red;
+    margin: 3px;
+}
+.nho-quen a{
+    color: #fff;
+    text-decoration: none;
+}
+.nho-quen a:hover{
+    text-decoration: underline;
+}
+.form .nut{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.form .dang-ky{
+    font-size: 14.5px;
+    text-align: center;
+    /* margin-top: 20px; */
+    margin: 20px 0 15px;
+}
+.dang-ky p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 15px;
+}
+.dang-ky p a:hover{
+    text-decoration: underline;
+    
+}

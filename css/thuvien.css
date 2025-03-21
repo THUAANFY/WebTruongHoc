@@ -1,0 +1,25 @@
+.thuvien-container{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: larger;
+}
+.thuvien-container ul{
+    list-style: none;
+    padding: 0px 15px 0 15px;
+}
+.thuvien-container ul li a{
+    text-decoration: none;
+    background: url(../image/img_icon/redo.png) no-repeat 5px center;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    line-height: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    padding: 20px 5px 20px 35px;
+}
+.thuvien-container ul li a:hover{
+    color: orangered;
+    text-decoration: underline;
+    transition: 0.3s;
+}

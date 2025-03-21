@@ -1,0 +1,77 @@
+article .khung {
+    width: 250px;
+    min-height: 280px;
+    margin-top: 15px;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    margin-left: 5px;
+    float: left;
+}
+article .khung .poster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 210px;
+    /* border: 1px solid green; */
+    overflow: hidden;
+}
+.khung .poster img {
+    width: 85%;
+    padding: 0 20px 0 20px;
+}
+
+article .khung .noidung{
+    background-color: rgba(211, 211, 211, 0.39);
+    width: 100%;
+    height: 80px;
+    border-top: 1px solid gray;
+    box-sizing: border-box;
+}
+.noidung .nd-trai{
+    width: 97%;
+    height: 40%;
+    margin: 5px 0 0 4px;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.noidung .nd-trai a{
+    text-decoration: none;
+    margin-left: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: small;
+    color: black;
+}
+
+.noidung .nd-phai{
+    width: 50%;
+    height: 40%;
+    float: right;
+    margin: 5px 4px 5px 0;
+    box-sizing: border-box;
+}
+.noidung .nd-phai button {
+    width: 100%;
+    height: 100%;
+    background-color: 	#009966;
+    color: aliceblue;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+}
+.noidung .nd-phai button i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.noidung .nd-phai button:hover{
+    cursor: pointer;
+    background-color: #cc1717;
+}

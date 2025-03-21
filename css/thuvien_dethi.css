@@ -1,0 +1,82 @@
+article .khunganh{
+    width: auto;
+    min-height: 150px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: sans-serif;
+    border-bottom: 1px solid gray;
+}
+article .khunganh .anh{
+    width: 20%;
+    height: 150px;
+    float: left;
+    /* overflow: hidden; Đảm bảo ảnh không tràn ra ngoài khung */
+}
+article .khunganh .anh img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
+}
+
+article .khunganh .noidung{
+    width: 100%;
+    height: 200px;
+}
+.noidungtren{
+    text-decoration: none;
+    color: black;
+    margin: 0px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    font-size: large;
+    transition: 0.5s ease;
+    display: flex;
+}
+.noidungduoi p{
+    display: flex;
+    margin: 10px 0px 0px 0px;
+    padding-left: 25px;
+    color: black;
+}
+.noidungduoi p a{
+    text-decoration: none;
+    padding-left: 5px;
+    color: black;
+    /* transition: 0.5s ease; */
+    transition: all 0.2s linear;
+}
+
+/* HOVER */
+/* Phần này là các hiệu ứng hover ban đầu của bạn */
+article .khunganh:hover p a{
+    color: orangered;
+}
+.noidungduoi p a:hover{
+    text-decoration: underline;
+}
+article .khunganh:hover .noidungtren{
+    color: #5e9ec1;
+}
+article .khunganh:hover .anh img{
+    transform: scale(1.07);
+}
+
+/* Phần mới thêm vào để làm mờ các khung khác khi hover */
+article {
+    position: relative;
+}
+/* article .khunganh {
+    position: relative;
+} */
+article:hover .khunganh:not(:hover) {
+    filter: blur(2px);
+    transition: filter 0.3s ease;
+}
+/* article:hover .khunganh:hover {
+    z-index: 2; 
+} */
+
+

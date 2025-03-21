@@ -1,0 +1,180 @@
+article .khung{
+    width: 450px;
+    min-height: 300px;
+    margin-top: 5px;
+    margin-left: 0px;
+    margin-right: 5px;
+    font-family: sans-serif;
+    float: left;
+    box-sizing: border-box;
+}
+article .khung .hinhanh{
+    width: 100%;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+}
+article .khung .hinhanh img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+article .khung a{
+    background: url('../image/img_thuvien/img_thuvien_tailieu/new.png') no-repeat left center;
+    display: flex;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: larger;
+    padding-top: 22px;
+    padding-left: 40px;
+    color: black;
+    transition: color 0.3s ease;
+}
+article .khung p{
+    font-size: small;
+    text-align: justify;
+    color: gray;
+}
+
+article .khung:hover .hinhanh img{
+    transform: scale(1.07);
+}
+article .khung:hover a{
+    color: #5e9ec1;
+}
+article .khung a:hover{
+    text-decoration: underline;
+}
+
+
+article .khung-nho{
+    width: 300px;
+    min-height: 300px;
+    margin-top: 5px;
+    margin-left: 0px;
+    margin-right: 5px;
+    font-family: sans-serif;
+    float: right;
+}
+article .khung-nho .anh-nho{
+    width: 100%;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+}
+article .khung-nho .anh-nho img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+article .khung-nho a{
+    background: url('../image/img_thuvien/img_thuvien_tailieu/new.png') no-repeat left center;
+    display: flex;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: larg;
+    padding-top: 20px;
+    padding-left: 40px;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+
+article .khung-nho:hover .anh-nho img{
+    transform: scale(1.07);
+}
+article .khung-nho:hover a{
+    color: #5e9ec1;
+}
+article .khung-nho a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+article .khunganh{
+    width: 97%;
+    min-height: 150px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: sans-serif;
+    border-bottom: 1px solid gray;
+    float: left;
+}
+article .khunganh .anh{
+    width: 20%;
+    height: 150px;
+    float: left;
+    /* overflow: hidden; Đảm bảo ảnh không tràn ra ngoài khung */
+}
+article .khunganh .anh img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
+}
+
+article .khunganh .noidung{
+    width: 100%;
+    height: 200px;
+}
+.noidungtren{
+    text-decoration: none;
+    color: black;
+    margin: 0px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    font-size: large;
+    transition: 0.5s ease;
+    display: flex;
+}
+.noidungduoi p{
+    display: flex;
+    margin: 10px 0px 0px 0px;
+    padding-left: 25px;
+    color: black;
+    font-size: small;
+}
+
+
+/* HOVER */
+/* .noidungduoi p a:hover{
+    text-decoration: underline;
+}
+article .khunganh:hover .noidungtren{
+    color: #5e9ec1;
+}
+article .khunganh:hover .anh img{
+    transform: scale(1.07);
+} */
+
+
+/* Phần giữ nguyên */
+.noidungduoi p a:hover {
+    text-decoration: underline;
+}
+article .khunganh:hover .noidungtren {
+    color: #5e9ec1;
+}
+article .khunganh:hover .anh img {
+    transform: scale(1.07);
+}
+
+/* Phần thêm vào để làm mờ các khung khác khi hover */
+article {
+    position: relative;
+}
+article .khunganh {
+    position: relative;
+    z-index: 1;
+}
+article:hover .khunganh:not(:hover) {
+    filter: blur(2px);
+    transition: filter 0.3s ease;
+}
+article:hover .khunganh:hover {
+    z-index: 2; /* Đảm bảo khung được hover lên trên cùng */
+}
